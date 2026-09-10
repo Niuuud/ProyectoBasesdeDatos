@@ -271,4 +271,3 @@ INSERT INTO piso (numeropiso, idedificio) VALUES (5, (SELECT id FROM edificio WH
 
 COMMIT;
 
-SELECT COUNT(*) FROM piso;   -- expected 225
