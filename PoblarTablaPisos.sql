@@ -1,6 +1,3 @@
--- Piso: 5 floors per building, 225 rows.
--- The DBMS assigns piso.id; idedificio is looked up by the building's natural key.
-
 -- Instituto Pensar
 INSERT INTO piso (numeropiso, idedificio) VALUES (1, (SELECT id FROM edificio WHERE nombre = 'Instituto Pensar'));
 INSERT INTO piso (numeropiso, idedificio) VALUES (2, (SELECT id FROM edificio WHERE nombre = 'Instituto Pensar'));
