@@ -1,4 +1,3 @@
--- Edificio: nombre is the natural key; the DBMS assigns the id.
 INSERT INTO edificio (nombre) VALUES ('Instituto Pensar');
 INSERT INTO edificio (nombre) VALUES ('Fernando Baron, S.J.');
 INSERT INTO edificio (nombre) VALUES ('Gabriel Giraldo, S.J.');
