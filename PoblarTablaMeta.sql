@@ -711,4 +711,11 @@ INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) V
 INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1220456789), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Emilio Arango'), DATE '2026-02-09', 565000, 435100);
 INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1220456789), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Emilio Arango'), DATE '2026-03-13', 575000, 631900);
 
+-- Registros complementarios para garantizar al menos 5 colaboradores con metas en todas las cafeterias.
+INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1010234567), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Jesus Emilio Ramirez'), DATE '2026-04-01', 580000, 612000);
+INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1020345678), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Jesus Emilio Ramirez'), DATE '2026-04-02', 585000, 541000);
+INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1030456789), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Jesus Emilio Ramirez'), DATE '2026-04-03', 590000, 603000);
+INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1040567890), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Jesus Emilio Ramirez'), DATE '2026-04-04', 595000, 557000);
+INSERT INTO meta (idcolaborador, idcafeteria, fechameta, valormeta, valorreal) VALUES ((SELECT id FROM colaborador WHERE tipodocumento = 'CC' AND numerodocumento = 1050678901), (SELECT id FROM cafeteria WHERE nombre = 'Cafeteria Jesus Emilio Ramirez'), DATE '2026-04-05', 600000, 625000);
+
 COMMIT;
